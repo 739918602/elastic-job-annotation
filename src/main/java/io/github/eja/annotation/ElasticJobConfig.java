@@ -1,4 +1,4 @@
-package cn.zys.schedule.annotation;
+package io.github.eja.annotation;
 
 import com.dangdang.ddframe.job.lite.api.listener.AbstractDistributeOnceElasticJobListener;
 import com.dangdang.ddframe.job.lite.api.listener.ElasticJobListener;
@@ -7,10 +7,8 @@ import org.springframework.stereotype.Component;
 import java.lang.annotation.*;
 
 /**
- * @Title:
- * @Author: ZhangYuSai
- * @Date: 2018/8/15 15:59
- * @Version: 1.0.0
+ * @author: ZhangYuSai
+ * @version : 1.0.0
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

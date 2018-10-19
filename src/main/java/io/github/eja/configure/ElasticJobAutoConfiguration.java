@@ -1,7 +1,7 @@
-package cn.zys.schedule.autoconfigure;
+package io.github.eja.configure;
 
 
-import cn.zys.schedule.annotation.ElasticJobConfig;
+import io.github.eja.annotation.ElasticJobConfig;
 import com.dangdang.ddframe.job.api.ElasticJob;
 import com.dangdang.ddframe.job.api.JobType;
 import com.dangdang.ddframe.job.api.dataflow.DataflowJob;
@@ -21,6 +21,7 @@ import com.dangdang.ddframe.job.lite.api.listener.ElasticJobListener;
 import com.dangdang.ddframe.job.lite.config.LiteJobConfiguration;
 import com.dangdang.ddframe.job.lite.spring.api.SpringJobScheduler;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
+import io.github.eja.store.JobEventNoSqlConfiguration;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,13 +41,11 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.util.*;
 /**
- * @Title:
- * @Author: ZhangYuSai
- * @Date: 2018/8/15 16:15
- * @Version: 1.0.0
+ * @author: ZhangYuSai
+ * @version: 1.0.0
  */
 @Configuration
-@ConditionalOnProperty(name = "elasticJob.zkAddressList")
+@ConditionalOnProperty(prefix = "elastic-job",value = {"zk-address-list","namespace"})
 @EnableConfigurationProperties({ZookeeperRegistryProperties.class})
 public class ElasticJobAutoConfiguration {
     private static final Logger log = LoggerFactory.getLogger(ElasticJobAutoConfiguration.class);

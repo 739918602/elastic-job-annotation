@@ -1,4 +1,4 @@
-package cn.zys.schedule.autoconfigure;
+package io.github.eja.store;
 
 import com.dangdang.ddframe.job.event.JobEventConfiguration;
 import com.dangdang.ddframe.job.event.JobEventListener;
@@ -10,10 +10,8 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import java.io.Serializable;
 
 /**
- * @Title:
- * @Author: ZhangYuSai
- * @Date: 2018/9/27 14:27
- * @Version: 1.0.0
+ * @author: ZhangYuSai
+ * @version: 1.0.0
  */
 public class JobEventNoSqlConfiguration extends JobEventRdbIdentity implements JobEventConfiguration, Serializable {
     private final transient  MongoDbFactory mongoDbFactory;

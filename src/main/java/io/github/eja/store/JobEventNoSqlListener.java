@@ -1,4 +1,4 @@
-package cn.zys.schedule.autoconfigure;
+package io.github.eja.store;
 
 import com.dangdang.ddframe.job.event.JobEventListener;
 import com.dangdang.ddframe.job.event.rdb.JobEventRdbIdentity;
@@ -8,10 +8,8 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
 /**
- * @Title:
- * @Author: ZhangYuSai
- * @Date: 2018/10/8 11:18
- * @Version: 1.0.0
+ * @author: ZhangYuSai
+ * @version: 1.0.0
  */
 public class JobEventNoSqlListener extends JobEventRdbIdentity implements JobEventListener {
     private final transient MongoTemplate mongoTemplate;

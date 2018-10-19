@@ -1,0 +1,6 @@
+elastic-job:
+  zk-address-list: 118.25.14.51:2181
+  namespace: app-namespace
+logging:
+  level:
+    io.github.eja: debug
