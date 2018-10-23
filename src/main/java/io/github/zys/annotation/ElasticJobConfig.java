@@ -1,4 +1,4 @@
-package io.github.eja.annotation;
+package io.github.zys.annotation;
 
 import com.dangdang.ddframe.job.lite.api.listener.AbstractDistributeOnceElasticJobListener;
 import com.dangdang.ddframe.job.lite.api.listener.ElasticJobListener;

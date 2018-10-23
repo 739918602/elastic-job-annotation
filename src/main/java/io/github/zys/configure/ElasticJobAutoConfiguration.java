@@ -1,7 +1,7 @@
-package io.github.eja.configure;
+package io.github.zys.configure;
 
 
-import io.github.eja.annotation.ElasticJobConfig;
+import io.github.zys.annotation.ElasticJobConfig;
 import com.dangdang.ddframe.job.api.ElasticJob;
 import com.dangdang.ddframe.job.api.JobType;
 import com.dangdang.ddframe.job.api.dataflow.DataflowJob;
@@ -21,7 +21,7 @@ import com.dangdang.ddframe.job.lite.api.listener.ElasticJobListener;
 import com.dangdang.ddframe.job.lite.config.LiteJobConfiguration;
 import com.dangdang.ddframe.job.lite.spring.api.SpringJobScheduler;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;
-import io.github.eja.store.JobEventNoSqlConfiguration;
+import io.github.zys.store.JobEventNoSqlConfiguration;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package io.github.eja.configure;
+package io.github.zys.configure;
 
-import io.github.eja.annotation.ElasticJobConfig;
+import io.github.zys.annotation.ElasticJobConfig;
 import com.dangdang.ddframe.job.api.ElasticJob;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperConfiguration;
 import com.dangdang.ddframe.job.reg.zookeeper.ZookeeperRegistryCenter;

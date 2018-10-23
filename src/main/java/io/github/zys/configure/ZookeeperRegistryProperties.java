@@ -1,4 +1,4 @@
-package io.github.eja.configure;
+package io.github.zys.configure;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

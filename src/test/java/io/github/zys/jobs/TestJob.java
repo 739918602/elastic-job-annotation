@@ -1,8 +1,8 @@
-package io.github.eja.jobs;
+package io.github.zys.jobs;
 
 import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.simple.SimpleJob;
-import io.github.eja.annotation.ElasticJobConfig;
+import io.github.zys.annotation.ElasticJobConfig;
 import lombok.extern.slf4j.Slf4j;
 
 /**
