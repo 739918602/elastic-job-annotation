@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.github.zys</groupId>
+    <groupId>io.github.739918602</groupId>
     <artifactId>elastic-job-annotation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
